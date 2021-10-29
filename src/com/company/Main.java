@@ -12,7 +12,8 @@ public class Main {
             int first = scanner.nextInt();
             System.out.print("Enter the second number: ");
             int second = scanner.nextInt();
-            System.out.println("Greatest common divisor = " + GreatestCommonDivisor.getGreatestCommonDivisor(first, second));
+            GreatestCommonDivisor greatestCommonDivisor = new GreatestCommonDivisor(first, second);
+            System.out.println("Greatest common divisor = " + greatestCommonDivisor.getGreatestCommonDivisor(first, second));
         } else {
             System.out.println("Invalid number");
         }

@@ -1,7 +1,15 @@
 package com.company;
 
 public class GreatestCommonDivisor {
-    public static int getGreatestCommonDivisor(int first, int second) {
+    private int first;
+    private int second;
+
+    public GreatestCommonDivisor(int first, int second) {
+        this.first = first;
+        this.second = second;
+    }
+
+    public int getGreatestCommonDivisor(int first, int second) {
         if (first < 10 || second < 10) {
             return -1;
         }
